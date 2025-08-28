@@ -1,0 +1,63 @@
+.titlebar {
+    display: flex;
+  align-items: center; /* Dark macOS title bar */
+  /* height: 28px;
+  padding-left: 10px; */
+  margin-bottom: 20px;
+}
+
+.close-window-button,
+.maximize-window-button,
+.minimize-window-button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;   /* makes them circles */
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;   /* for the icon */
+  margin-right: 8px;
+}
+
+.close-window-button {
+    background-color: #ff5f57;
+    /* margin-right: 8px;
+    border: none; */
+}
+
+.maximize-window-button{
+    background-color: #ffbd2e;
+    /* margin-right: 8px;
+    border: none; */
+}
+
+.minimize-window-button{
+    background-color: #28c940;
+    /* border: none; */
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+}
+
+.close-window-button:hover .icon,
+.maximize-window-button:hover .icon,
+.window-buttons button:hover .icon {
+  opacity: 1; 
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    align-items: flex-start;
+    /* gap: 2px; */
+  }
+}

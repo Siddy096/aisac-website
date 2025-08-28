@@ -1,0 +1,44 @@
+.navbar {
+  height: 40px;
+  background: #3F3A44;   /* macOS-like dark */
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border-bottom: 1px solid #2c2c2f; /* subtle separator */
+  color: #fff;
+  font-size: 14px;
+  gap: 8px;
+}
+
+/* Navigation arrow buttons */
+.navigate-arrow {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: #2a2a2e;
+  border: none;
+  color: #bfbfc3;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navigate-arrow:hover {
+  background: #3a3a3f;
+  color: #ffffff;
+}
+
+/* Disabled look for arrows (when no history) */
+.navigate-arrow:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* Folder name text */
+.current-folder {
+  margin-left: 12px;
+  font-weight: 500;
+  color: #e1e1e5;
+}

@@ -1,0 +1,71 @@
+.sidebar {
+  width: 220px;
+  background: #3F3A44;        /* Dark macOS-like background */
+  border-right: 1px solid #000000;
+  height: 100vh;              /* Fill screen height */
+  display: flex;
+  flex-direction: column;
+  padding: 12px 8px;
+  gap: 6px;
+}
+
+/* Base style for all sidebar buttons */
+.navigation-button,
+.navigation-folder {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: #e5e5e7;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+
+  display: flex;              /* make items align in a row */
+  align-items: center;    
+}
+
+/* Hover effect */
+.navigation-button:hover,
+.navigation-folder:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Differentiate folders */
+.navigation-folder {
+  font-weight: 500;
+  color: #ffffff; /* macOS blue for folders */
+}
+
+/* Text inside button */
+.button-text {
+  pointer-events: none;
+  flex: 1; 
+  margin-left: 5px;/* makes clicking easier */
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    flex-direction: row;      /* make it horizontal */
+    height: auto;             /* no more full height */
+    width: 100%;              /* full width at top */
+    border-right: none;       /* remove vertical border */
+    border-bottom: 1px solid #2c2c2e; /* add bottom border */
+    justify-content: space-around;    /* spread buttons evenly */
+  }
+
+  .navigation-button,
+  .navigation-folder {
+    flex-direction: column;   /* icon above text */
+    align-items: center;      /* center icon + text */
+    font-size: 12px;          /* slightly smaller text */
+  }
+
+  .button-text {
+    display: block;  /* show text again if you want under icons */
+    margin-left: 0;
+    margin-top: 4px;
+  }
+}

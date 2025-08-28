@@ -1,0 +1,29 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Remove or update this - it's not being used */
+.content-area {
+  flex-direction: column;
+  background-color: #b3e5f1;
+  color: black;
+  width: 100%;
+  height: calc(100vh - 40px - 40px);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 250px;
+  height: auto;
+}
+
+.rotating-image-container {
+  position: relative;
+}
