@@ -4,26 +4,16 @@ body, html, #root {
   height: 100%;
 }
 
-/* Remove or update this - it's not being used */
 .achievement-area {
-  flex-direction: column;
   background-color: #f1b3b3;
   color: black;
   width: 100%;
-  height: calc(100vh - 40px - 40px);
+  height: 100vh; /* Full viewport height to match ContentArea */
   margin: 0;
   padding: 0;
-  overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0; /* Prevent shrinking */
 }
-
-/* .image {
-  max-width: 250px;
-  height: auto;
-}
-
-.rotating-image-container {
-  position: relative;
-} */

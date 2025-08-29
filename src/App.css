@@ -27,10 +27,9 @@ body, html, #root {
 
 .content-area {
   flex: 1;
-  /* background: #ffffff; */
-  /* padding: 16px; */
+  overflow-y: auto;
+  scroll-behavior: smooth; /* Add smooth scrolling */
 }
-
 .content-wrapper {
   display: flex;
   flex-direction: column;
