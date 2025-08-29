@@ -35,7 +35,7 @@ body, html, #root {
 
 /* ContentArea specific styles */
 .content-area {
-  background-color: #b3e5f1;
+  background-color: #060010;
   color: black;
   width: 100%;
   min-height: 100vh; /* Use min-height instead of height */
@@ -55,44 +55,6 @@ body, html, #root {
 
 .rotating-image-container {
   position: relative;
-}
-
-.address-bar {
-  position: absolute;          /* Take it out of flow */
-  left: 221px;                 /* Width of sidebar */
-  right: 0;                    /* Stretch until right edge */
-  bottom: 0;                   /* Stick to bottom */
-  height: 40px;
-  background: #2c2c2f;         /* Dark background */
-  display: flex;
-  align-items: center;
-  padding: 0 12px;
-  box-sizing: border-box;
-  z-index: 10;                 /* Ensure it overlays */
-  border-top: 1px solid #3a3a3d;  /* Subtle border like mac */
-  color: #fff;
-}
-
-/* ----- MOBILE LAYOUT ----- */
-@media (max-width: 600px) {
-  .main-content {
-    flex-direction: column; /* stack vertically */
-  }
-
-  .sidebar {
-    width: 100%;               /* take full width */
-    height: auto;              /* no full screen height */
-    border-right: none;        /* remove left border */
-    border-bottom: 1px solid #3a3a3c; /* separator at bottom */
-    display: flex;             /* arrange items horizontally */
-    justify-content: space-around;
-    align-items: center;
-    padding: 8px 0;
-  }
-
-  .address-bar {
-    left: 0px;
-  }
 }
 
 .address-bar {

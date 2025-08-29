@@ -4,7 +4,7 @@ import '../styles/Achievements.css';
 function Achievements(){
     return(
         <div className="achievement-area">
-            asdasd
+            Content 2
         </div>
     )
 }

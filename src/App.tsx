@@ -19,7 +19,7 @@ function App(){
             </div>
             <Element name = "main-content">
             <div className="content-area"> 
-                <ContentArea></ContentArea><br />
+                <ContentArea></ContentArea>
                 <Achievements></Achievements>
             </div>
             </Element>

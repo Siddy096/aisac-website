@@ -38,7 +38,7 @@ body, html, #root {
 
 .address-bar {
   position: absolute;          /* Take it out of flow */
-  left: 221px;                 /* Width of sidebar */
+  left: 220px;                 /* Width of sidebar */
   right: 0;                    /* Stretch until right edge */
   bottom: 0;                   /* Stick to bottom */
   height: 40px;
