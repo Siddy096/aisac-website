@@ -73,6 +73,38 @@ body, html, #root {
   color: #fff;
 }
 
+@font-face {
+  font-family: 'PixelatedEleganceRegular';
+  src: url('../fonts/PixelatedEleganceRegular-ovyAA.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.title-text{
+  font-weight: 700;
+  font-size: 4.0rem;
+  margin: 0;  
+  font-family: 'PixelatedEleganceRegular', sans-serif;
+}
+
+.body-text{
+  font-size: 1.2rem;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.text-container{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translateY(50);
+  color: #fff;
+  text-align: left;
+  z-index: 2;
+  max-width: 500px;
+  font-family: sans-serif;
+}
 /* ----- MOBILE LAYOUT ----- */
 @media (max-width: 600px) {
   .main-content {
