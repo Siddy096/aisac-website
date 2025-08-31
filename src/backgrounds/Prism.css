@@ -1,0 +1,11 @@
+.prism-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .prism-container{
+    height: 160%;
+  }
+}

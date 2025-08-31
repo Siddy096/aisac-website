@@ -38,7 +38,7 @@ body, html, #root {
   background-color: #060010;
   color: black;
   width: 100%;
-  min-height: 100vh; /* Use min-height instead of height */
+  min-height: calc(100vh - 40px); /* Use min-height instead of height */
   margin: 0;
   padding: 0;
   display: flex;
@@ -46,15 +46,6 @@ body, html, #root {
   justify-content: center;
   align-items: center;
   flex-shrink: 0; /* Prevent shrinking */
-}
-
-.image {
-  max-width: 250px;
-  height: auto;
-}
-
-.rotating-image-container {
-  position: relative;
 }
 
 .address-bar {
@@ -74,8 +65,15 @@ body, html, #root {
 }
 
 @font-face {
-  font-family: 'PixelatedEleganceRegular';
-  src: url('../fonts/PixelatedEleganceRegular-ovyAA.ttf') format('opentype');
+  font-family: 'Michroma-Regular';
+  src: url('../fonts/Michroma-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GoogleSansCode-VariableFont_wght';
+  src: url('../fonts/GoogleSansCode-VariableFont_wght.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -85,38 +83,47 @@ body, html, #root {
   font-weight: 700;
   font-size: 4.0rem;
   margin: 0;  
-  font-family: 'PixelatedEleganceRegular', sans-serif;
+  left: 0;
+  font-family: 'Michroma-Regular', sans-serif;
 }
 
 .body-text{
   font-size: 1.2rem;
   margin-top: 15px;
   line-height: 1.6;
+  font-family: 'GoogleSansCode-VariableFont_wght';
 }
 
 .text-container{
   position: absolute;
-  top: 40%;
+  top: 4%;
   left: 10%;
-  transform: translateY(50);
+  /* transform: translateY(50); */
   color: #fff;
   text-align: left;
   z-index: 2;
   max-width: 500px;
   font-family: sans-serif;
 }
+
+.background{
+  width: 100%;
+  height: 715px;
+  position: relative;
+}
+
 /* ----- MOBILE LAYOUT ----- */
 @media (max-width: 600px) {
   .main-content {
-    flex-direction: column; /* stack vertically */
+    flex-direction: column;
   }
 
   .sidebar {
-    width: 100%;               /* take full width */
-    height: auto;              /* no full screen height */
-    border-right: none;        /* remove left border */
-    border-bottom: 1px solid #3a3a3c; /* separator at bottom */
-    display: flex;             /* arrange items horizontally */
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #3a3a3c;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 8px 0;
@@ -124,10 +131,24 @@ body, html, #root {
 
   .content-wrapper .content-area {
     flex: 1;
-    overflow-y: auto; /* allow scroll if content is long */
+    overflow-y: auto;
   }
 
   .address-bar {
     left: 0px;
+  }
+
+  /* ✅ Center the text container */
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* perfect centering */
+    text-align: center;
+    max-width: 90%; /* smaller screens need flexible width */
+  }
+
+  .background{
+    height: 785px;
   }
 }

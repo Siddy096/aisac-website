@@ -18,7 +18,7 @@ function SideBar(){
                 <button className="navigation-folder">
                     <img width="20px" height="20px" src = "https://img.icons8.com/ios-filled/50/228BE6/conference-background-selected.png" className=""/>
                     <span className="button-text">
-                        Team Leaders                    
+                        Team Members                   
                     </span>
                 </button>
                 <button className="navigation-folder">
