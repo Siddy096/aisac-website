@@ -26,19 +26,19 @@ export default function TeamMembers() {
           disableRotation={false}
         />
       </div>
-      <h2 className="page-title">
-          <SplitText
-            text="AISAC-TEAM"
-            delay={100}
-            duration={0.6}
-            ease="power3.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 10 }}
-            to={{ opacity: 1, y: 0 }}
-            threshold={0.1}
-            rootMargin="-100px"
-          />
-      </h2>
+      <h1 className="page-title">
+        <SplitText
+          text="AiSAC TEAM"
+          delay={100}
+          duration={0.6}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 10 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+        />
+      </h1>
       <div className='team-hierarchy'>
         {/* Chairman */}
         <div className='chairman-section'>

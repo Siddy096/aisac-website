@@ -76,5 +76,6 @@ body, html, #root {
 
   .address-bar {
     left: 0px;
+    margin-bottom: 0;
   }
 }
