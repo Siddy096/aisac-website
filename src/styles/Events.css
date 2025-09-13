@@ -2,45 +2,55 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
   margin-top: 0;
+  z-index: 1;
+}
+
+/* 🔹 Fixed Background */
+.beams-background {
+  position: absolute; /* relative to events-container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none; /* won’t block clicks */
 }
 
 /* Fonts */
 @font-face {
-  font-family: 'Michroma-Regular';
-  src: url('../fonts/Michroma-Regular.ttf') format('opentype');
+  font-family: "Michroma-Regular";
+  src: url("../fonts/Michroma-Regular.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'GoogleSansCode-VariableFont_wght';
-  src: url('../fonts/GoogleSansCode-VariableFont_wght.ttf') format('opentype');
+  font-family: "GoogleSansCode-VariableFont_wght";
+  src: url("../fonts/GoogleSansCode-VariableFont_wght.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 /* Page Title */
 .page-title {
-  font-family: 'Michroma-Regular';
+  font-family: "Michroma-Regular";
   font-size: 50px;
   color: white;
   position: relative;
   z-index: 2;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 /* Event Cards Grid */
 .event-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 50px;
   position: relative;
-  z-index: 2;
+  z-index: 2; /* keep above beams */
 }
 
 .event-card {
@@ -49,7 +59,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   padding: 25px;
   text-align: left;
-  font-family: 'GoogleSansCode-VariableFont_wght';
+  font-family: "GoogleSansCode-VariableFont_wght";
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -59,7 +69,7 @@
 }
 
 .event-card h3 {
-  font-family: 'Michroma-Regular';
+  font-family: "Michroma-Regular";
   font-size: 22px;
   margin-bottom: 15px;
   color: #333;
@@ -69,7 +79,7 @@
   margin-bottom: 15px;
   font-size: 16px;
   color: #444;
-  font-family: 'GoogleSansCode-VariableFont_wght';
+  font-family: "GoogleSansCode-VariableFont_wght";
 }
 
 .details-btn {
@@ -117,25 +127,24 @@
   max-height: 90vh;
 }
 
-/* 🔹 Modal Sections */
 .modal-left {
   flex: 1;
   padding: 25px;
   font-size: 16px;
   color: #333;
   overflow-y: auto;
-  font-family: 'GoogleSansCode-VariableFont_wght', sans-serif; /* ✅ apply font */
+  font-family: "GoogleSansCode-VariableFont_wght", sans-serif;
 }
 
 .modal-left h2 {
-  font-family: 'Michroma-Regular', sans-serif; /* ✅ heading font */
+  font-family: "Michroma-Regular", sans-serif;
   font-size: 28px;
   margin-bottom: 15px;
   color: #111;
 }
 
 .modal-left p {
-  font-family: 'GoogleSansCode-VariableFont_wght', sans-serif; /* ✅ paragraph font */
+  font-family: "GoogleSansCode-VariableFont_wght", sans-serif;
   margin-bottom: 12px;
   font-size: 16px;
   line-height: 1.6;
@@ -158,7 +167,6 @@
   border-radius: 0 12px 12px 0;
 }
 
-/* 🔹 Close Button */
 .close-btn {
   position: absolute;
   top: 15px;
@@ -183,13 +191,13 @@
 /* ✅ Responsiveness */
 @media (max-width: 1024px) {
   .event-cards {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .event-cards {
-    grid-template-columns: 1fr; /* single column on mobile */
+    grid-template-columns: 1fr;
     padding: 20px;
   }
 
