@@ -42,8 +42,8 @@ export default function TeamMembers() {
           splitType="chars"
           from={{ opacity: 0, y: 10 }}
           to={{ opacity: 1, y: 0 }}
-          threshold={0.1}
-          rootMargin="-100px"
+          threshold={0}
+          rootMargin="0px"
         />
       </h1>
       <div className='team-hierarchy'>
@@ -837,109 +837,6 @@ export default function TeamMembers() {
                 }
               />
           </div>
-        </div>
-        <h1 className="page-title">
-        <SplitText
-          text="CSI TEAM"
-          delay={100}
-          duration={0.6}
-          ease="power3.out"
-          splitType="chars"
-          from={{ opacity: 0, y: 10 }}
-          to={{ opacity: 1, y: 0 }}
-          threshold={0.1}
-          rootMargin="-100px"
-        />
-      </h1>
-      <div className='team-hierarchy'>
-        {/* Chairman */}
-        <div className='chairman-section'>
-          <span className='section-title'>
-            <DecryptedText
-              text="Chairman"
-              speed={60}
-              animateOn="view"
-            />
-          </span>
-          <TiltedCard
-            imageSrc={Devesh}
-            altText="Chairman"
-            captionText="Chairman"
-            containerHeight="200px"
-            containerWidth="200px"
-            imageHeight="200px"
-            imageWidth="200px"
-            rotateAmplitude={8}
-            scaleOnHover={1.1}
-            showMobileWarning={false}
-            showTooltip={true}
-            displayOverlayContent={true}
-            overlayContent={
-              <p className="tilted-card-demo-text">
-                Aditya Nevgi
-              </p>
-            }
-          />
-        </div>
-        </div>
-        <div className='secretaries-section'>
-          <span className='section-title'>
-            <DecryptedText
-              text="Secretary"
-              speed={60}
-              animateOn="view"
-            />
-          </span>
-          <div className='secretaries-cards'>
-            <TiltedCard
-              imageSrc={Bhakti}
-              altText="Bhakti Damare"
-              captionText="Secretary"
-              containerHeight="180px"
-              containerWidth="180px"
-              imageHeight="180px"
-              imageWidth="180px"
-              rotateAmplitude={8}
-              scaleOnHover={1.1}
-              showMobileWarning={false}
-              showTooltip={true}
-              displayOverlayContent={true}
-              overlayContent={
-                <p className="tilted-card-demo-text">
-                  Bhakti Damare
-                </p>
-              }
-            />
-          </div>
-        </div>
-
-        <div className='treasurer-section'>
-          <span className='section-title'>
-            <DecryptedText
-              text="Treasurer"
-              speed={60}
-              animateOn="view"
-            />
-          </span>
-          <TiltedCard
-            imageSrc={Rohit}
-            altText="Rohit Zore"
-            captionText="Treasurer"
-            containerHeight="180px"
-            containerWidth="180px"
-            imageHeight="180px"
-            imageWidth="180px"
-            rotateAmplitude={8}
-            scaleOnHover={1.1}
-            showMobileWarning={false}
-            showTooltip={true}
-            displayOverlayContent={true}
-            overlayContent={
-              <p className="tilted-card-demo-text">
-                Rohit Zore
-              </p>
-            }
-          />
         </div>
       </div>
     </div>
