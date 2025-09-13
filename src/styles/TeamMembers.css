@@ -1,0 +1,298 @@
+/* -------------------- TeamMembers.css (replace file) -------------------- */
+
+.folder-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* padding: 40px 20px; */
+    margin-top: 0;
+}
+
+.particles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.team-hierarchy {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+@font-face {
+  font-family: 'Michroma-Regular';
+  src: url('../fonts/Michroma-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tilted-card-demo-text{
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+.page-title{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Michroma-Regular', sans-serif;
+}
+
+@font-face {
+  font-family: 'GoogleSansCode-VariableFont_wght';
+  src: url('../fonts/GoogleSansCode-VariableFont_wght.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.section-title {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'GoogleSansCode-VariableFont_wght', sans-serif;
+}
+
+/* -------------------- Structure sections -------------------- */
+/* Chairman Section */
+.chairman-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Secretaries Section */
+.secretaries-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* strong defaults for secretaries container */
+.secretaries-cards {
+    display: flex;
+    gap: 40px;
+    flex-wrap: nowrap;             /* keep them in a row by default */
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Force card sizing in secretaries; supports both .tilted-card root or any child */
+.secretaries-cards .tilted-card,
+.secretaries-cards > * {
+    box-sizing: border-box;
+    /* keep to fixed visual size but allow shrink on tiny screens */
+    flex: 0 0 min(180px, calc(50% - 12px)); /* two-per-row width on small screens */
+    max-width: min(180px, calc(50% - 12px));
+    width: 100%;
+}
+
+/* Individual Position Sections */
+.treasurer-section,
+.event-head-section,
+.technical-team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Technical Team Members Section */
+.tech-members-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* default tech-members layout for desktop/tablet */
+.tech-members-cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+}
+
+/* force card sizing for tech-members (applies to .tilted-card or any child) */
+.tech-members-cards .tilted-card,
+.tech-members-cards > * {
+    box-sizing: border-box;
+    width: 160px;
+    max-width: 100%;
+}
+
+/* -------------------- RESPONSIVENESS -------------------- */
+@media (max-width: 768px) {
+    .folder-container {
+        padding: 15px 10px;
+    }
+    
+    .team-hierarchy {
+        gap: 30px;
+    }
+
+    .page-title {
+        font-size: 40px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+    
+    .secretaries-cards {
+        gap: 25px;
+        justify-content: center;
+        flex-wrap: nowrap; /* keep two secretaries side-by-side */
+    }
+    
+    /* switch tech-members to grid for neat 2-per-row on smaller viewports */
+    .tech-members-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* two columns */
+        gap: 20px;
+        justify-items: center;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* ensure the last tech member spans full-width and is centered */
+    .tech-members-cards .tilted-card:last-child,
+    .tech-members-cards > *:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 34px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    /* keep secretaries side-by-side but shrink them so they fit nicely */
+    .secretaries-cards {
+        gap: 18px;
+        flex-wrap: nowrap;
+    }
+
+    .secretaries-cards .tilted-card,
+    .secretaries-cards > * {
+        flex: 0 0 min(160px, calc(50% - 12px));
+        max-width: min(160px, calc(50% - 12px));
+    }
+
+    .tech-members-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .tech-members-cards .tilted-card,
+    .tech-members-cards > * {
+        width: min(160px, 100%);
+    }
+
+    .tech-members-cards .tilted-card:last-child,
+    .tech-members-cards > *:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .folder-container {
+        padding: 10px 5px;
+    }
+    
+    .team-hierarchy {
+        gap: 25px;
+    }
+
+    .page-title {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+    
+    .chairman-section .tilted-card,
+    .treasurer-section .tilted-card,
+    .event-head-section .tilted-card,
+    .technical-team-section .tilted-card {
+        transform: scale(0.85);
+    }
+    
+    .secretaries-cards .tilted-card,
+    .secretaries-cards > * {
+        transform: none; /* keep layout stable */
+        flex: 0 0 min(150px, calc(50% - 12px));
+        max-width: min(150px, calc(50% - 12px));
+    }
+    
+    .tech-members-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        max-width: 320px;
+    }
+    
+    .tech-members-cards .tilted-card,
+    .tech-members-cards > * {
+        transform: scale(0.75);
+        width: min(150px, 100%);
+    }
+}
+
+@media (max-width: 360px) {
+    .page-title {
+        font-size: 24px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .chairman-section .tilted-card,
+    .treasurer-section .tilted-card,
+    .event-head-section .tilted-card,
+    .technical-team-section .tilted-card {
+        transform: scale(0.75);
+    }
+    
+    .secretaries-cards .tilted-card,
+    .secretaries-cards > * {
+        transform: scale(0.7);
+        flex: 0 0 min(140px, calc(50% - 10px));
+    }
+    
+    .tech-members-cards .tilted-card,
+    .tech-members-cards > * {
+        transform: scale(0.65);
+        width: min(140px, 100%);
+    }
+}
+
+/* -------------------- end file -------------------- */

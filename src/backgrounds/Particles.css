@@ -1,0 +1,23 @@
+.folder-container {
+    /* Existing styles */
+    position: relative; /* Set the position for z-index to work correctly on children */
+}
+
+.particles-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute; /* Change to absolute so it doesn't take up space */
+    top: 0;
+    left: 0;
+    z-index: 1; /* A low z-index */
+}
+
+.profile-card-container {
+    position: relative; /* Position relative to its parent `.folder-container` */
+    z-index: 2; /* A higher z-index to appear on top of particles */
+    display: flex; /* To center the card */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Fill the parent */
+    height: 100vh; /* Make it full height for centering */
+}
