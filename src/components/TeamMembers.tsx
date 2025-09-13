@@ -10,10 +10,12 @@ import '../styles/TeamMembers.css'
 
 import Devesh from '../assets/team-members-images/Devesh.jpg'
 import Siddhesh from '../assets/team-members-images/Siddhesh.jpg';
-import Rohit from '../assets/team-members-images/Rohit.jpeg';
+import Rohit from '../assets/team-members-images/Rohit.jpg';
 import Rishi from '../assets/team-members-images/Rishi.jpg'
 import Vedant from '../assets/team-members-images/Vedant.jpg';
 import Darpan from '../assets/team-members-images/Darpan.jpg';
+import Drishti from '../assets/team-members-images/Drishti.jpg';
+import Bhakti from '../assets/team-members-images/Bhakti.jpg'
 
 export default function TeamMembers() {
   return (
@@ -30,6 +32,7 @@ export default function TeamMembers() {
           disableRotation={false}
         />
       </div>
+      {/* AISAC Team */}
       <h1 className="page-title">
         <SplitText
           text="AiSAC TEAM"
@@ -315,7 +318,7 @@ export default function TeamMembers() {
               />
           </div>
         </div>
-        
+        {/* Creativity Team */}
         <div className='technical-team-section'>
           <span className='section-title'>
             <DecryptedText
@@ -345,7 +348,7 @@ export default function TeamMembers() {
           />
         </div>
 
-        {/* Technical Team Members */}
+        {/* Creativity Team Members */}
         <div className='tech-members-section'>
           <div className='tech-members-cards'>
               <TiltedCard
@@ -444,6 +447,499 @@ export default function TeamMembers() {
                 }
               />
           </div>
+        </div>
+        {/* Infra & Security Team */}
+        <div className='technical-team-section'>
+          <span className='section-title'>
+            <DecryptedText
+              text="Infra & Security Team"
+              speed={60}
+              animateOn="view"
+            />
+          </span>
+          <TiltedCard
+            imageSrc={Devesh}
+            altText="Sarthak Gavas"
+            captionText="Infra & Security Head"
+            containerHeight="180px"
+            containerWidth="180px"
+            imageHeight="180px"
+            imageWidth="180px"
+            rotateAmplitude={8}
+            scaleOnHover={1.1}
+            showMobileWarning={false}
+            showTooltip={true}
+            displayOverlayContent={true}
+            overlayContent={
+              <p className="tilted-card-demo-text">
+                Sarthak Gavas
+              </p>
+            }
+          />
+        </div>
+
+        {/* Infra & Security Team Members */}
+        <div className='tech-members-section'>
+          <div className='tech-members-cards'>
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Infra & Security Team Member"
+                captionText="Infra & Security Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Infra & Security Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Infra & Security Team Member"
+                captionText="Infra & Security Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Infra & Security Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Infra & Security Team Member"
+                captionText="Infra & Security Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Infra & Security Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Infra & Security Team Member"
+                captionText="Infra & Security Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Infra & Security Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Infra & Security Team Member"
+                captionText="Infra & Security Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Infra & Security Member
+                  </p>
+                }
+              />
+          </div>
+        </div>
+        {/* Social Media Team */}
+        <div className='technical-team-section'>
+          <span className='section-title'>
+            <DecryptedText
+              text="Social Media Team"
+              speed={60}
+              animateOn="view"
+            />
+          </span>
+          <TiltedCard
+            imageSrc={Devesh}
+            altText="Ninad Panchal"
+            captionText="Social Media Head"
+            containerHeight="180px"
+            containerWidth="180px"
+            imageHeight="180px"
+            imageWidth="180px"
+            rotateAmplitude={8}
+            scaleOnHover={1.1}
+            showMobileWarning={false}
+            showTooltip={true}
+            displayOverlayContent={true}
+            overlayContent={
+              <p className="tilted-card-demo-text">
+                Ninad Panchal
+              </p>
+            }
+          />
+        </div>
+
+        {/* Social Media Team Members */}
+        <div className='tech-members-section'>
+          <div className='tech-members-cards'>
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Social Media Team Member"
+                captionText="Social Media Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Social Media Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Social Media Team Member"
+                captionText="Social Media Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Social Media Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Social Media Team Member"
+                captionText="Social Media Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Social Media Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Social Media Team Member"
+                captionText="Social Media Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Social Media Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Social Media Team Member"
+                captionText="Social Media Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Social Media Member
+                  </p>
+                }
+              />
+          </div>
+        </div>
+        {/* Documentation Team */}
+        <div className='technical-team-section'>
+          <span className='section-title'>
+            <DecryptedText
+              text="Documentation Team"
+              speed={60}
+              animateOn="view"
+            />
+          </span>
+          <TiltedCard
+            imageSrc={Drishti}
+            altText="Drishti Kadam"
+            captionText="Documentation Head"
+            containerHeight="180px"
+            containerWidth="180px"
+            imageHeight="180px"
+            imageWidth="180px"
+            rotateAmplitude={8}
+            scaleOnHover={1.1}
+            showMobileWarning={false}
+            showTooltip={true}
+            displayOverlayContent={true}
+            overlayContent={
+              <p className="tilted-card-demo-text">
+                Drishti Kadam
+              </p>
+            }
+          />
+        </div>
+
+        {/* Documentation Team Members */}
+        <div className='tech-members-section'>
+          <div className='tech-members-cards'>
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Documentation Team Member"
+                captionText="Documentation Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Documentation Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Documentation Team Member"
+                captionText="Documentation Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Documentation Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Documentation Team Member"
+                captionText="Documentation Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Documentation Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Documentation Team Member"
+                captionText="Documentation Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Documentation Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Documentation Team Member"
+                captionText="Documentation Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Documentation Member
+                  </p>
+                }
+              />
+          </div>
+        </div>
+        <h1 className="page-title">
+        <SplitText
+          text="CSI TEAM"
+          delay={100}
+          duration={0.6}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 10 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+        />
+      </h1>
+      <div className='team-hierarchy'>
+        {/* Chairman */}
+        <div className='chairman-section'>
+          <span className='section-title'>
+            <DecryptedText
+              text="Chairman"
+              speed={60}
+              animateOn="view"
+            />
+          </span>
+          <TiltedCard
+            imageSrc={Devesh}
+            altText="Chairman"
+            captionText="Chairman"
+            containerHeight="200px"
+            containerWidth="200px"
+            imageHeight="200px"
+            imageWidth="200px"
+            rotateAmplitude={8}
+            scaleOnHover={1.1}
+            showMobileWarning={false}
+            showTooltip={true}
+            displayOverlayContent={true}
+            overlayContent={
+              <p className="tilted-card-demo-text">
+                Aditya Nevgi
+              </p>
+            }
+          />
+        </div>
+        </div>
+        <div className='secretaries-section'>
+          <span className='section-title'>
+            <DecryptedText
+              text="Secretary"
+              speed={60}
+              animateOn="view"
+            />
+          </span>
+          <div className='secretaries-cards'>
+            <TiltedCard
+              imageSrc={Bhakti}
+              altText="Bhakti Damare"
+              captionText="Secretary"
+              containerHeight="180px"
+              containerWidth="180px"
+              imageHeight="180px"
+              imageWidth="180px"
+              rotateAmplitude={8}
+              scaleOnHover={1.1}
+              showMobileWarning={false}
+              showTooltip={true}
+              displayOverlayContent={true}
+              overlayContent={
+                <p className="tilted-card-demo-text">
+                  Bhakti Damare
+                </p>
+              }
+            />
+          </div>
+        </div>
+
+        <div className='treasurer-section'>
+          <span className='section-title'>
+            <DecryptedText
+              text="Treasurer"
+              speed={60}
+              animateOn="view"
+            />
+          </span>
+          <TiltedCard
+            imageSrc={Rohit}
+            altText="Rohit Zore"
+            captionText="Treasurer"
+            containerHeight="180px"
+            containerWidth="180px"
+            imageHeight="180px"
+            imageWidth="180px"
+            rotateAmplitude={8}
+            scaleOnHover={1.1}
+            showMobileWarning={false}
+            showTooltip={true}
+            displayOverlayContent={true}
+            overlayContent={
+              <p className="tilted-card-demo-text">
+                Rohit Zore
+              </p>
+            }
+          />
         </div>
       </div>
     </div>
