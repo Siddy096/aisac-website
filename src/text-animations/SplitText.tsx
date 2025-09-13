@@ -1,13 +1,28 @@
-import { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText as GSAPSplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
 
-// ✅ register only real GSAP plugins
+// register the actual plugins we use
 gsap.registerPlugin(ScrollTrigger, GSAPSplitText);
 
-const SplitText = ({
+interface SplitTextProps {
+  text: string;
+  className?: string;
+  delay?: number; // ms
+  duration?: number; // s
+  ease?: string;
+  splitType?: string;
+  from?: { opacity?: number; y?: number };
+  to?: { opacity?: number; y?: number };
+  threshold?: number;
+  rootMargin?: string;
+  tag?: keyof JSX.IntrinsicElements;
+  onLetterAnimationComplete?: () => void;
+}
+
+const SplitText: React.FC<SplitTextProps> = ({
   text,
   className = "",
   delay = 100,
@@ -21,15 +36,15 @@ const SplitText = ({
   tag = "p",
   onLetterAnimationComplete,
 }) => {
-  const ref = useRef(null);
-  const animationCompletedRef = useRef(false);
+  const ref = useRef<HTMLElement | null>(null);
+  const animationCompletedRef = useRef<boolean>(false);
   const [fontsLoaded, setFontsLoaded] = useState(false);
 
   useEffect(() => {
-    if (document.fonts.status === "loaded") {
+    if ((document as any).fonts?.status === "loaded") {
       setFontsLoaded(true);
     } else {
-      document.fonts.ready.then(() => {
+      (document as any).fonts?.ready?.then(() => {
         setFontsLoaded(true);
       });
     }
@@ -38,12 +53,16 @@ const SplitText = ({
   useGSAP(
     () => {
       if (!ref.current || !text || !fontsLoaded) return;
-      const el = ref.current;
+
+      // allow access to plugin-specific private properties
+      const el: any = ref.current;
 
       if (el._rbsplitInstance) {
         try {
           el._rbsplitInstance.revert();
-        } catch (_) {}
+        } catch (_) {
+          // ignore
+        }
         el._rbsplitInstance = null;
       }
 
@@ -59,11 +78,11 @@ const SplitText = ({
           : `+=${marginValue}${marginUnit}`;
       const start = `top ${startPct}%${sign}`;
 
-      let targets;
-      const assignTargets = (self) => {
-        if (splitType.includes("chars") && self.chars.length) targets = self.chars;
-        if (!targets && splitType.includes("words") && self.words.length) targets = self.words;
-        if (!targets && splitType.includes("lines") && self.lines.length) targets = self.lines;
+      let targets: any;
+      const assignTargets = (self: any) => {
+        if (splitType.includes("chars") && self.chars?.length) targets = self.chars;
+        if (!targets && splitType.includes("words") && self.words?.length) targets = self.words;
+        if (!targets && splitType.includes("lines") && self.lines?.length) targets = self.lines;
         if (!targets) targets = self.chars || self.words || self.lines;
       };
 
@@ -75,7 +94,7 @@ const SplitText = ({
         wordsClass: "split-word",
         charsClass: "split-char",
         reduceWhiteSpace: false,
-        onSplit: (self) => {
+        onSplit: (self: any) => {
           assignTargets(self);
           const tween = gsap.fromTo(
             targets,
@@ -133,24 +152,11 @@ const SplitText = ({
     }
   );
 
-  const classes = `split-parent ${className}`;
+  const classes = `split-parent ${className}`.trim();
 
-  switch (tag) {
-    case "h1":
-      return <i><h1 ref={ref} className={classes}>{text}</h1></i>;
-    case "h2":
-      return <i><h2 ref={ref} className={classes}>{text}</h2></i>;
-    case "h3":
-      return <i><h3 ref={ref} className={classes}>{text}</h3></i>;
-    case "h4":
-      return <i><h4 ref={ref} className={classes}>{text}</h4></i>;
-    case "h5":
-      return <i><h5 ref={ref} className={classes}>{text}</h5></i>;
-    case "h6":
-      return <i><h6 ref={ref} className={classes}>{text}</h6></i>;
-    default:
-      return <p ref={ref} className={classes}>{text}</p>;
-  }
+  const Tag = tag as any;
+
+  return <Tag ref={ref as any} className={classes}>{text}</Tag>;
 };
 
 export default SplitText;
