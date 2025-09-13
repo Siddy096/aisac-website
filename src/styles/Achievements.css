@@ -1,19 +1,36 @@
+/* Reset all margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body, html, #root {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevent any scrolling */
 }
 
+/* Only reset for this component, don't affect global styles */
 .achievement-area {
   background-color: #ffffff;
   color: black;
   width: 100%;
-  min-height: 100vh; /* Use min-height instead of height */
+  height: 100vh;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0; /* Prevent shrinking */
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+/* Ensure GridDistortion fills the entire container */
+.achievement-area canvas {
+  display: block;
+  width: 100% !important;
+  height: 100vh !important;
+  object-fit: cover;
+  vertical-align: top; /* Remove any baseline spacing */
 }

@@ -9,12 +9,7 @@ import DecryptedText from '../text-animations/DecryptedText';
 import '../styles/TeamMembers.css'
 
 import Devesh from '../assets/team-members-images/Devesh.jpg'
-import Siddhesh from '../assets/team-members-images/Siddhesh.jpg';
 import Rohit from '../assets/team-members-images/Rohit.jpg';
-import Rishi from '../assets/team-members-images/Rishi.jpg'
-import Vedant from '../assets/team-members-images/Vedant.jpg';
-import Darpan from '../assets/team-members-images/Darpan.jpg';
-import Drishti from '../assets/team-members-images/Drishti.jpg';
 import Bhakti from '../assets/team-members-images/Bhakti.jpg';
 
 export default function CsiMembers({ onToggleTeam }) {
