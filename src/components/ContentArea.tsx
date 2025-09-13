@@ -1,8 +1,6 @@
 import React from "react";
 import '../styles/ContentArea.css'
-import background from '../assets/background.jpg';
 import { motion } from 'framer-motion'
-import outer from '../assets/outer-ring.png'
 // import Orb from '../backgrounds/Orb'
 import DecryptedText from "../text-animations/DecryptedText";
 // import Prism from "../backgrounds/Prism";

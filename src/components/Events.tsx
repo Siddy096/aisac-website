@@ -29,7 +29,7 @@ export default function Events() {
       fee: "₹30",
       poster: PromptBattle,
       details:
-        "Classic indoor carrom tournament for casual and competitive players.",
+        "Fast-paced AI prompt showdown where creativity and precision decide the winner",
     },
     {
       title: "Reel Making",
@@ -38,7 +38,7 @@ export default function Events() {
       fee: "₹30",
       poster: ReelMaking,
       details:
-        "Participants code without running their program until the very end!",
+        "Creative reel-making contest where storytelling and editing skills shine on screen.",
     },
   ];
 

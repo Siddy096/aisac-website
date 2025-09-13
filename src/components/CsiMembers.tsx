@@ -333,7 +333,7 @@ export default function CsiMembers({ onToggleTeam }) {
         <div className='secretaries-section'>
               <span className='section-title'>
                 <DecryptedText
-                  text="Secretaries"
+                  text="Event & Magzine Head"
                   speed={60}
                   animateOn="view"
                 />
