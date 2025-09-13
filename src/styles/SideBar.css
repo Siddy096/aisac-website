@@ -53,7 +53,8 @@
     width: 100%;              /* full width at top */
     border-right: none;       /* remove vertical border */
     border-bottom: 1px solid #2c2c2e; /* add bottom border */
-    justify-content: space-around;    /* spread buttons evenly */
+    justify-content: space-around; 
+    gap: 3px;   /* spread buttons evenly */
   }
 
   .navigation-button,
@@ -67,5 +68,7 @@
     display: block;  /* show text again if you want under icons */
     margin-left: 0;
     margin-top: 4px;
+    align-items: center;
+    text-align: center;
   }
 }
