@@ -13,12 +13,11 @@ import '../styles/TeamMembers.css'
 
 import Devesh from '../assets/team-members-images/Devesh.jpg'
 import Siddhesh from '../assets/team-members-images/Siddhesh.jpg';
-import Rohit from '../assets/team-members-images/Rohit.jpg';
 import Rishi from '../assets/team-members-images/Rishi.jpg'
 import Vedant from '../assets/team-members-images/Vedant.jpg';
 import Darpan from '../assets/team-members-images/Darpan.jpg';
 import Drishti from '../assets/team-members-images/Drishti.jpg';
-import Bhakti from '../assets/team-members-images/Bhakti.jpg'
+import Kshama from '../assets/team-members-images/Kshama.jpg'
 
 export default function TeamMembers() {
   const [showCsiTeam, setShowCsiTeam] = useState(false);
@@ -109,7 +108,7 @@ export default function TeamMembers() {
               </span>
               <div className='secretaries-cards'>
                 <TiltedCard
-                  imageSrc={Devesh}
+                  imageSrc={Kshama}
                   altText="Kshama Nayak"
                   captionText="Secretary"
                   containerHeight="180px"
