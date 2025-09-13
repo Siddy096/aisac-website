@@ -74,7 +74,7 @@ export default function TeamMembers() {
         <div className='secretaries-section'>
           <span className='section-title'>
             <DecryptedText
-              text="Secratries"
+              text="Secretaries"
               speed={60}
               animateOn="view"
             />

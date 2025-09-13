@@ -1,0 +1,223 @@
+.events-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 0;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Michroma-Regular';
+  src: url('../fonts/Michroma-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GoogleSansCode-VariableFont_wght';
+  src: url('../fonts/GoogleSansCode-VariableFont_wght.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Page Title */
+.page-title {
+  font-family: 'Michroma-Regular';
+  font-size: 50px;
+  color: white;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Event Cards Grid */
+.event-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+  gap: 30px;
+  padding: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.event-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  text-align: left;
+  font-family: 'GoogleSansCode-VariableFont_wght';
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.event-card h3 {
+  font-family: 'Michroma-Regular';
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.event-info {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #444;
+  font-family: 'GoogleSansCode-VariableFont_wght';
+}
+
+.details-btn {
+  display: inline-block;
+  background: #111;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.details-btn:hover {
+  background: #333;
+}
+
+/* 🔹 Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+/* 🔹 Modal Box */
+.modal {
+  background: white;
+  width: 70%;
+  max-width: 1000px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease;
+  position: relative;
+  max-height: 90vh;
+}
+
+/* 🔹 Modal Sections */
+.modal-left {
+  flex: 1;
+  padding: 25px;
+  font-size: 16px;
+  color: #333;
+  overflow-y: auto;
+  font-family: 'GoogleSansCode-VariableFont_wght', sans-serif; /* ✅ apply font */
+}
+
+.modal-left h2 {
+  font-family: 'Michroma-Regular', sans-serif; /* ✅ heading font */
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.modal-left p {
+  font-family: 'GoogleSansCode-VariableFont_wght', sans-serif; /* ✅ paragraph font */
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.modal-right {
+  flex: 1;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-right img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 0 12px 12px 0;
+}
+
+/* 🔹 Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* 🔹 Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ✅ Responsiveness */
+@media (max-width: 1024px) {
+  .event-cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .event-cards {
+    grid-template-columns: 1fr; /* single column on mobile */
+    padding: 20px;
+  }
+
+  .modal {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border-radius: 0;
+  }
+
+  .modal-left {
+    flex: none;
+    padding: 20px;
+    max-height: 40%;
+    overflow-y: auto;
+  }
+
+  .modal-right {
+    flex: none;
+    max-height: 60%;
+    background: #000;
+  }
+
+  .modal-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0;
+  }
+}
