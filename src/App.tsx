@@ -5,7 +5,7 @@ import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar";
 import ContentArea from "./components/ContentArea";
 import Achievements from "./components/Achievements";
-import TeamMembers from "./components/TeamMembers";
+import TeamMembers from "./components/AisacMembers";
 import Events from "./components/Events";
 import About from "./components/About";
 import Contact from "./components/Contact";
