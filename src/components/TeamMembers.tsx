@@ -214,11 +214,9 @@ export default function TeamMembers() {
         {/* Technical Team Members */}
         <div className='tech-members-section'>
           <div className='tech-members-cards'>
-            {[1, 2, 3, 4, 5].map((member, index) => (
               <TiltedCard
-                key={index}
-                imageSrc={`${Devesh}${member}`}
-                altText={`Technical Team Member ${member}`}
+                imageSrc={Devesh}
+                altText="Technical Team Member"
                 captionText="Tech Team"
                 containerHeight="160px"
                 containerWidth="160px"
@@ -231,11 +229,86 @@ export default function TeamMembers() {
                 displayOverlayContent={true}
                 overlayContent={
                   <p className="tilted-card-demo-text">
-                    Tech Member {member}
+                    Tech Member
                   </p>
                 }
               />
-            ))}
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Technical Team Member"
+                captionText="Tech Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Tech Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Technical Team Member"
+                captionText="Tech Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Tech Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Technical Team Member"
+                captionText="Tech Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Tech Member
+                  </p>
+                }
+              />
+              <TiltedCard
+                imageSrc={Devesh}
+                altText="Technical Team Member"
+                captionText="Tech Team"
+                containerHeight="160px"
+                containerWidth="160px"
+                imageHeight="160px"
+                imageWidth="160px"
+                rotateAmplitude={6}
+                scaleOnHover={1.05}
+                showMobileWarning={false}
+                showTooltip={true}
+                displayOverlayContent={true}
+                overlayContent={
+                  <p className="tilted-card-demo-text">
+                    Tech Member
+                  </p>
+                }
+              />
           </div>
         </div>
       </div>
