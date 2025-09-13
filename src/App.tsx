@@ -66,9 +66,6 @@ function App(){
             </Element>
           </div>
         </div>
-        <div className="address-bar">
-            Address Bar
-        </div>
     </div>
   );
 }
