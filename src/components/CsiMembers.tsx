@@ -11,6 +11,7 @@ import '../styles/TeamMembers.css'
 import Devesh from '../assets/team-members-images/Devesh.jpg'
 import Rohit from '../assets/team-members-images/Rohit.jpg';
 import Bhakti from '../assets/team-members-images/Bhakti.jpg';
+import Gayatri from '../assets/team-members-images/Gayatri.jpg'
 
 export default function CsiMembers({ onToggleTeam }) {
   return (
@@ -180,7 +181,7 @@ export default function CsiMembers({ onToggleTeam }) {
             />
           </span>
           <TiltedCard
-            imageSrc={Devesh}
+            imageSrc={Gayatri}
             altText="Bhoomi Naik"
             captionText="Event Head"
             containerHeight="180px"

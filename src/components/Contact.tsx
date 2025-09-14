@@ -4,6 +4,8 @@ import '../styles/Contact.css'
 import LiquidEther from "../backgrounds/LiquidEther";
 
 import AISAC from '../assets/icons/AISAC-LOGO.jpg'
+import insta from '../assets/icons/instagram (2).png';
+import gmail from '../assets/icons/gmail.png'
 
 export default function Contact(){
     return(
@@ -43,8 +45,14 @@ export default function Contact(){
         </div>
 
         <div className="contact-actions">
-          <button>💬 Instagram</button>
-          <button>📞 E-Mail</button>
+          <button className="contact-button" onClick={() => window.open("https://www.instagram.com/aisac_vppcoe", "_blank")}>
+            <img src={insta} alt="instagram" className="contact-icon" />
+            Instagram
+          </button>
+          <button className="contact-button" onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=aisac.team@gmail.com", "_blank")}>
+            <img src={gmail} alt="gmail" className="contact-icon" />
+            E-Mail
+          </button>
         </div>
 
         <div className="contact-info">

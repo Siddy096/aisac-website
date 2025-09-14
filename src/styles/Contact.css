@@ -131,10 +131,35 @@
   border-radius: 50%;
 }
 
-.contact-actions {
-  display: flex;
-  gap: 15px;
-  margin: 20px 0;
+.contact-actions { 
+    display: flex; 
+    gap: 15px; 
+    margin: 20px 0; 
+}
+
+.contact-actions button {
+  background: #0a84ff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+
+  display: flex;              /* make button flex */
+  align-items: center;        /* vertical center */
+  justify-content: center;    /* horizontal center */
+  gap: 8px;                   /* space between icon & text */
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-button{
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-actions button {
