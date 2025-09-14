@@ -194,7 +194,7 @@ export default function CsiMembers({ onToggleTeam }) {
             displayOverlayContent={true}
             overlayContent={
               <p className="tilted-card-demo-text">
-                Bhoomi Naik
+                Gayatri Chavan
               </p>
             }
           />

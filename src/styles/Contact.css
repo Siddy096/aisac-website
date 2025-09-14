@@ -1,0 +1,179 @@
+.contact-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.contact-content {
+  position: relative;
+  z-index: 2;
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Michroma-Regular', sans-serif;
+}
+
+.contact-content p {
+  font-size: 1.2rem;
+  font-family: 'GoogleSansCode-VariableFont_wght', sans-serif;
+}
+
+/* Ensure canvas takes full size */
+.background-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+.contact-app {
+  display: flex;
+  height: 100vh;
+  background: rgba(30, 30, 30, 0.9); /* semi-transparent so effect shows */
+  color: #f1f1f1;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", sans-serif;
+  position: relative;
+  z-index: 2; /* ensures it's above the background */
+  border-radius: 12px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+
+/* Sidebar */
+.contact-sidebar {
+  width: 250px;
+  background: #2b2b2b;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.contact-search {
+  background: #3a3a3a;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.contact-list li {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contact-list li:hover {
+  background: #444;
+}
+
+.contact-list .active {
+  background: #0a84ff;
+  color: #fff;
+}
+
+.add-btn {
+  margin-top: auto;
+  background: #3a3a3a;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+/* Contact details */
+.contact-details {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.contact-actions button {
+  background: #0a84ff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.contact-info {
+  flex-grow: 1;
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+.contact-info span {
+  color: #aaa;
+  margin-right: 8px;
+  font-size: 0.9rem;
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.contact-footer button {
+  background: #3a3a3a;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
