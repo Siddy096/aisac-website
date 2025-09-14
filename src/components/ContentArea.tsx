@@ -92,6 +92,7 @@ function ContentArea() {
             
             {/* Vision & Mission Section */}
             <div className="vision-mission-container">
+                <h2 className="mentors-text">Vision and Mission</h2>
                 <div className="vision-card">
                     <h2>Our Vision</h2>
                     <p>
