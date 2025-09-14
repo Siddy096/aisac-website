@@ -50,7 +50,7 @@ function App(){
           </div>
           <div className="content-wrapper">
             <div className="navbar">
-              <NavBar />
+              <NavBar activeSection={activeSection} />
             </div>
             <Element name="main-content">
               <div className="content-area"> 

@@ -38,7 +38,10 @@
 
 /* Folder name text */
 .current-folder {
-  margin-left: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", sans-serif;
+  font-size: 0.95rem;
   font-weight: 500;
-  color: #e1e1e5;
+  color: #ffffff;
+  margin-left: 10px;
 }
+
