@@ -49,7 +49,7 @@ export default function Contact(){
             <img src={insta} alt="instagram" className="contact-icon" />
             Instagram
           </button>
-          <button className="contact-button" onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=aisac.team@gmail.com", "_blank")}>
+          <button className="contact-button" onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=aisac.vpp@gmail.com", "_blank")}>
             <img src={gmail} alt="gmail" className="contact-icon" />
             E-Mail
           </button>
@@ -57,7 +57,7 @@ export default function Contact(){
 
         <div className="contact-info">
           <p><span>mobile</span> +91 98981 53919</p>
-          <p><span>email</span> </p>
+          <p><span>email</span> aisac.vpp@gmail.com</p>
           <p><span>address</span> Vasantdada Patil Educational Complex, Eastern Express Highway, Padmabhushan Vasantdada Patil Marg, Sion Mumbai 400022.</p>
         </div>
 
