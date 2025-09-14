@@ -57,7 +57,7 @@ body, html, #root {
   gap: 30px;
   justify-content: center;
   align-items: center;
-  margin-top: 200px; /* Space from text above */
+  margin-top: 50px; /* Reduced space from text above */
   margin-bottom: 200px; /* Space at bottom */
   width: 100%; /* Ensure full width */
 }
@@ -156,6 +156,19 @@ body, html, #root {
   font-family: 'Michroma-Regular', sans-serif;
 }
 
+.mentors-text {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-family: 'Michroma-Regular', sans-serif;
+}
+
 .body-text{
   font-size: 1.2rem;
   margin-top: 75px;
@@ -185,7 +198,7 @@ body, html, #root {
   margin: 0px auto;
   width: 90%;
   margin-top: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
   max-width: 1200px;
   flex-wrap: wrap; /* Wraps on smaller screens */
 }
@@ -252,13 +265,20 @@ body, html, #root {
     left: 0px;
   }
 
+  /* Our Mentors text mobile */
+  .mentors-text {
+    font-size: 2rem;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+
   /* 👩‍🏫 Teachers Section */
   .teachers-container {
     flex-direction: column;
     gap: 20px;
     padding: 0 20px;
-    margin-top: 50px;     /* reduced from 200px */
-    margin-bottom: 200px;  /* reduced from 200px */
+    margin-top: 30px;     /* reduced from 50px */
+    margin-bottom: 200px;
     align-self: center;
   }
 

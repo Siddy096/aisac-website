@@ -55,7 +55,11 @@ function ContentArea() {
                     />
                 </p>
             </motion.div>
-
+            
+            {/* Our Mentors text - no animation */}
+            <h2 className="mentors-text">Our Mentors</h2>
+            
+            
             {/* Teachers Container - Below the text */}
             <div className="teachers-container">
                 {/* Teacher 1 */}
@@ -85,24 +89,24 @@ function ContentArea() {
                     </div>
                 </div>
             </div>
+            
             {/* Vision & Mission Section */}
             <div className="vision-mission-container">
-            <div className="vision-card">
-                <h2>Our Vision</h2>
-                <p>
-                To Nurture innovative minds for academic excellence
-                with emphasis on in-dept technical knowledge for
-                creating a value-based sustainable society.
-                </p>
-            </div>
+                <div className="vision-card">
+                    <h2>Our Vision</h2>
+                    <p>
+                    To Nurture innovative minds for academic excellence
+                    with emphasis on in-dept technical knowledge for
+                    creating a value-based sustainable society.
+                    </p>
+                </div>
 
-            <div className="mission-card">
-                <h2>Our Mission</h2>
-                <p>To develop an ecosystem of academic excellence through the best possible teaching-learning methodology.</p>
-                <p>To develop practically trained skilled professionals to meet the demands of society and the corporate World.</p>
-                <p>To groom professionals with high ethical values and the ability to solve real-life problems.</p>
-            </div>
-
+                <div className="mission-card">
+                    <h2>Our Mission</h2>
+                    <p>To develop an ecosystem of academic excellence through the best possible teaching-learning methodology.</p>
+                    <p>To develop practically trained skilled professionals to meet the demands of society and the corporate World.</p>
+                    <p>To groom professionals with high ethical values and the ability to solve real-life problems.</p>
+                </div>
             </div>
         </div>
     )
