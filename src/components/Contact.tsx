@@ -7,6 +7,9 @@ import AISAC from '../assets/icons/AISAC-LOGO.jpg'
 import insta from '../assets/icons/instagram (2).png';
 import gmail from '../assets/icons/gmail.png'
 
+import SplitText from '../text-animations/SplitText'
+import AnimatedContent from '../assets/animations/AnimatedContent'
+
 export default function Contact(){
     return(
         <div className="contact-container">
@@ -41,18 +44,56 @@ export default function Contact(){
             alt="Profile"
             className="contact-avatar"
           />
-          <h2>AISAC TEAM</h2>
+          <h2 className="contact-title">
+            <SplitText
+              text="AiSAC TEAM"
+              delay={100}
+              duration={0.6}
+              ease="power3.out"
+              splitType="chars"
+              from={{ opacity: 0, y: 10 }}
+              to={{ opacity: 1, y: 0 }}
+              threshold={0}
+              rootMargin="0px"
+            />
+          </h2>
         </div>
 
         <div className="contact-actions">
-          <button className="contact-button" onClick={() => window.open("https://www.instagram.com/aisac_vppcoe", "_blank")}>
-            <img src={insta} alt="instagram" className="contact-icon" />
-            Instagram
-          </button>
-          <button className="contact-button" onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=aisac.vpp@gmail.com", "_blank")}>
-            <img src={gmail} alt="gmail" className="contact-icon" />
-            E-Mail
-          </button>
+            <AnimatedContent
+            distance={150}
+            direction="vertical"
+            reverse={false}
+            duration={1.2}
+            ease="bounce.out"
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+            delay={0.3}
+            >
+            <button className="contact-button" onClick={() => window.open("https://www.instagram.com/aisac_vppcoe", "_blank")}>
+                <img src={insta} alt="instagram" className="contact-icon" />
+                Instagram
+            </button>
+          </AnimatedContent>
+          <AnimatedContent
+            distance={150}
+            direction="vertical"
+            reverse={false}
+            duration={1.5}
+            ease="bounce.out"
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+            delay={0.3}
+            >
+            <button className="contact-button" onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=aisac.vpp@gmail.com", "_blank")}>
+                <img src={gmail} alt="gmail" className="contact-icon" />
+                E-Mail
+            </button>
+          </AnimatedContent>
         </div>
 
         <div className="contact-info">
