@@ -4,10 +4,8 @@ import { useState } from "react";
 import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar";
 import ContentArea from "./components/ContentArea";
-import Achievements from "./components/Achievements";
 import TeamMembers from "./components/AisacMembers";
 import Events from "./components/Events";
-import About from "./components/About";
 import Contact from "./components/Contact";
 
 import './App.css'
@@ -26,22 +24,18 @@ function App(){
         return (
           <>
             <ContentArea />
-            <Achievements />
           </>
         );
       case 'team':
         return <TeamMembers />;
       case 'events':
         return <Events />;
-      case 'about':
-        return <About />;
       case 'contact':
         return <Contact />;
       default:
         return (
           <>
             <ContentArea />
-            <Achievements />
           </>
         );
     }

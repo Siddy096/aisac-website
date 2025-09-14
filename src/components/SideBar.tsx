@@ -41,15 +41,6 @@ function SideBar({ onNavigate }: SideBarProps) {
                 <img width="20px" height="20px" src="https://img.icons8.com/sf-regular/48/228BE6/today.png" className=""/>
                 <span className="button-text">Events</span>
             </button>
-            
-            <button 
-                className="navigation-button"
-                onClick={() => onNavigate('about')}
-            >
-                <img src={about} className=""/>
-                <span className="button-text">About</span>
-            </button>
-            
             <button 
                 className="navigation-button"
                 onClick={() => onNavigate('contact')}

@@ -38,14 +38,83 @@ body, html, #root {
   background-color: #060010;
   color: black;
   width: 100%;
-  min-height: calc(100vh - 40px); /* Use min-height instead of height */
+  min-height: calc(100vh - 40px);
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Changed from center to flex-start */
+  flex-shrink: 0;
+  position: relative; /* Important for absolute background positioning */
+  overflow-x: hidden;
+}
+
+.teachers-container {
+  position: relative; /* Normal document flow */
+  z-index: 3; /* Above background */
+  display: flex;
+  gap: 30px;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0; /* Prevent shrinking */
+  margin-top: 200px; /* Space from text above */
+  margin-bottom: 200px; /* Space at bottom */
+  width: 100%; /* Ensure full width */
+}
+
+.teacher-card {
+  width: 250px; /* Back to original size */
+  height: 350px; /* Back to original height */
+  background: rgba(20, 20, 30, 0.85);
+  border-radius: 16px;
+  border: 1px solid rgba(100, 100, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6),
+              0 0 15px rgba(100, 100, 255, 0.4);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.teacher-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8),
+              0 0 25px rgba(100, 100, 255, 0.7);
+}
+
+.teacher-image {
+  width: 100%;
+  height: 70%; /* 70% of card reserved for image */
+  object-fit: cover; /* Ensures proper scaling */
+  object-position: center; /* Keeps subject centered */
+  border-bottom: 1px solid rgba(100, 100, 255, 0.3);
+}
+
+.teacher-info {
+  flex: 1;
+  padding: 10px; /* Back to original padding */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: '';
+}
+
+.teacher-info h3 {
+  margin: 5px 0; /* Back to original margin */
+  font-size: 0.9rem; /* Back to original font size */
+  color: #a3a9ff;
+  font-family: 'Michroma-Regular';
+}
+
+.teacher-info p {
+  font-size: 0.7rem; /* Back to original font size */
+  color: #ccc;
+  margin: 0;
+  font-family: 'GoogleSansCode-VariableFont_wght';
 }
 
 .address-bar {
@@ -78,7 +147,6 @@ body, html, #root {
   font-style: normal;
 }
 
-
 .title-text{
   font-weight: 700;
   font-size: 4.0rem;
@@ -96,23 +164,68 @@ body, html, #root {
 }
 
 .text-container{
-  position: absolute;
-  top: 4%;
-  left: 10%;
-  /* transform: translateY(50); */
+  position: relative; /* Normal document flow */
   color: #fff;
-  text-align: left;
-  z-index: 2;
+  text-align: left; /* Keep left alignment */
+  z-index: 2; /* Above background */
   max-width: 500px;
   font-family: sans-serif;
+  margin-top: 30px; /* Space from top */
+  margin-left: 10%; /* Position from left */
+  width: calc(90% - 20px); /* Ensure it doesn't overflow */
 }
 
-.background{
-  width: 100%;
-  height: 715px;
+.vision-mission-container {
   position: relative;
+  z-index: 3; /* Above background */
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0px auto;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  max-width: 1200px;
+  flex-wrap: wrap; /* Wraps on smaller screens */
 }
 
+.vision-card, .mission-card {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(20, 20, 30, 0.85);
+  border-radius: 16px;
+  border: 1px solid rgba(100, 100, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6),
+              0 0 15px rgba(100, 100, 255, 0.4);
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.vision-card:hover, .mission-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8),
+              0 0 25px rgba(100, 100, 255, 0.7);
+}
+
+.vision-card h2, .mission-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #a3a9ff;
+  font-family: 'Michroma-Regular', sans-serif;
+}
+
+.vision-card p, .mission-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+  font-family: 'GoogleSansCode-VariableFont_wght';
+}
+
+/* Mobile adjustments */
 /* ----- MOBILE LAYOUT ----- */
 @media (max-width: 600px) {
   .main-content {
@@ -132,28 +245,77 @@ body, html, #root {
 
   .content-wrapper .content-area {
     flex: 1;
-    overflow-y: auto;
+    align-items: flex-start;
   }
 
   .address-bar {
     left: 0px;
   }
 
-  /* ✅ Center the text container */
+  /* 👩‍🏫 Teachers Section */
+  .teachers-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+    margin-top: 50px;     /* reduced from 200px */
+    margin-bottom: 200px;  /* reduced from 200px */
+    align-self: center;
+  }
+
+  .teacher-card {
+    width: 260px;
+    height: 320px;
+  }
+
+  .teacher-info h3 {
+    font-size: 1rem;
+  }
+
+  .teacher-info p {
+    font-size: 0.8rem;
+  }
+
+  /* 📝 Vision & Mission Section */
+  .vision-mission-container {
+    flex-direction: column;
+    gap: 20px;                 /* tighter spacing between cards */
+    margin: 40px 15px 60px 15px; /* less margin around */
+    width: auto;
+    align-items: center;       /* center the cards */
+  }
+
+  .vision-card, .mission-card {
+    width: 100%;               /* full width but with padding around */
+    max-width: 350px;          /* prevents cards from being too wide */
+    padding: 18px 15px;        /* slightly smaller padding */
+    border-radius: 12px;       /* softer look */
+  }
+
+  .vision-card h2, .mission-card h2 {
+    font-size: 1.4rem;         /* headline smaller */
+    margin-bottom: 12px;
+  }
+
+  .vision-card p, .mission-card p {
+    font-size: 0.9rem;         /* text smaller */
+    line-height: 1.4;          /* tighter line spacing */
+  }
+
+  /* Text Container */
   .text-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* perfect centering */
+    text-align: left;
+    max-width: 90%; 
+    margin: 50px 0 0 5%;
+    margin-right: auto;
+    margin-bottom: 200px;
+  }
+
+  .title-text {
+    font-size: 2.5rem; /* smaller headline */
     text-align: center;
-    max-width: 90%; /* smaller screens need flexible width */
   }
 
-  .background{
-    height: 785px;
-  }
-
-  .title-text{
-    font-size: 3.5rem;
+  .body-text{
+    text-align: center;
   }
 }
