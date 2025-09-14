@@ -281,6 +281,7 @@ body, html, #root {
     gap: 20px;                 /* tighter spacing between cards */
     margin: 40px 15px 60px 15px; /* less margin around */
     width: auto;
+    margin-bottom: 200px;
     align-items: center;       /* center the cards */
   }
 
