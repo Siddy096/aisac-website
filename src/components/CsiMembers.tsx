@@ -12,6 +12,7 @@ import Devesh from '../assets/team-members-images/Devesh.jpg'
 import Rohit from '../assets/team-members-images/Rohit.jpg';
 import Bhakti from '../assets/team-members-images/Bhakti.jpg';
 import Gayatri from '../assets/team-members-images/Gayatri.jpg'
+import Omkar from '../assets/team-members-images/Omkar.jpg';
 
 export default function CsiMembers({ onToggleTeam }) {
   return (
@@ -341,8 +342,8 @@ export default function CsiMembers({ onToggleTeam }) {
               </span>
               <div className='secretaries-cards'>
                 <TiltedCard
-                  imageSrc={Devesh}
-                  altText="Kshama Nayak"
+                  imageSrc={Omkar}
+                  altText="Omkar Shingote"
                   captionText="Documentation Head"
                   containerHeight="180px"
                   containerWidth="180px"

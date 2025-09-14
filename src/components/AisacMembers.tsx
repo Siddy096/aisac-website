@@ -15,9 +15,12 @@ import Devesh from '../assets/team-members-images/Devesh.jpg'
 import Siddhesh from '../assets/team-members-images/Siddhesh.jpg';
 import Rishi from '../assets/team-members-images/Rishi.jpg'
 import Vedant from '../assets/team-members-images/Vedant.jpg';
-import Darpan from '../assets/team-members-images/Darpan.jpg';
 import Drishti from '../assets/team-members-images/Drishti.jpg';
 import Kshama from '../assets/team-members-images/Kshama.jpg'
+import Ninad from '../assets/team-members-images/Ninad.jpg';
+
+import Ayush from '../assets/team-members-images/Ayush.jpg';
+import Darpan from '../assets/team-members-images/Darpan.jpg';
 
 export default function TeamMembers() {
   const [showCsiTeam, setShowCsiTeam] = useState(false);
@@ -608,7 +611,7 @@ export default function TeamMembers() {
                 />
               </span>
               <TiltedCard
-                imageSrc={Devesh}
+                imageSrc={Ninad}
                 altText="Ninad Panchal"
                 captionText="Social Media Head"
                 containerHeight="180px"
@@ -632,7 +635,7 @@ export default function TeamMembers() {
             <div className='tech-members-section'>
               <div className='tech-members-cards'>
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={Ayush}
                     altText="Social Media Team Member"
                     captionText="Social Media Team"
                     containerHeight="160px"
@@ -646,7 +649,7 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Social Media Member
+                        Ayush Kharbhal
                       </p>
                     }
                   />
@@ -665,7 +668,7 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Social Media Member
+                        Aadi Kundaar
                       </p>
                     }
                   />
@@ -684,7 +687,7 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Social Media Member
+                        Trisha Shetty
                       </p>
                     }
                   />
@@ -703,26 +706,7 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Social Media Member
-                      </p>
-                    }
-                  />
-                  <TiltedCard
-                    imageSrc={Devesh}
-                    altText="Social Media Team Member"
-                    captionText="Social Media Team"
-                    containerHeight="160px"
-                    containerWidth="160px"
-                    imageHeight="160px"
-                    imageWidth="160px"
-                    rotateAmplitude={6}
-                    scaleOnHover={1.05}
-                    showMobileWarning={false}
-                    showTooltip={true}
-                    displayOverlayContent={true}
-                    overlayContent={
-                      <p className="tilted-card-demo-text">
-                        Social Media Member
+                        Aarya Yerankar
                       </p>
                     }
                   />
@@ -776,7 +760,7 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Documentation Member
+                        Aditi Sahu
                       </p>
                     }
                   />
@@ -795,7 +779,7 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Documentation Member
+                        Neel Pandey 
                       </p>
                     }
                   />
@@ -814,7 +798,7 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Documentation Member
+                        Masood Kasu
                       </p>
                     }
                   />
@@ -833,7 +817,7 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Documentation Member
+                        Dhruv Dwivedi 
                       </p>
                     }
                   />
@@ -852,7 +836,26 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Documentation Member
+                        Darpan Shah
+                      </p>
+                    }
+                  />
+                  <TiltedCard
+                    imageSrc={Devesh}
+                    altText="Documentation Team Member"
+                    captionText="Documentation Team"
+                    containerHeight="160px"
+                    containerWidth="160px"
+                    imageHeight="160px"
+                    imageWidth="160px"
+                    rotateAmplitude={6}
+                    scaleOnHover={1.05}
+                    showMobileWarning={false}
+                    showTooltip={true}
+                    displayOverlayContent={true}
+                    overlayContent={
+                      <p className="tilted-card-demo-text">
+                        Sharyou Sanap
                       </p>
                     }
                   />
