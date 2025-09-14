@@ -106,7 +106,7 @@ body, html, #root {
 .teacher-info h3 {
   margin: 5px 0; /* Back to original margin */
   font-size: 0.9rem; /* Back to original font size */
-  color: #a3a9ff;
+  color: #527fab;
   font-family: 'Michroma-Regular';
 }
 
@@ -214,7 +214,7 @@ body, html, #root {
 .vision-card h2, .mission-card h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #a3a9ff;
+  color: #527fab;
   font-family: 'Michroma-Regular', sans-serif;
 }
 

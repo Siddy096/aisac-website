@@ -90,7 +90,7 @@ function ContentArea() {
             <div className="vision-card">
                 <h2>Our Vision</h2>
                 <p>
-                To Nurture innovative minds for academic excellence.
+                To Nurture innovative minds for academic excellence
                 with emphasis on in-dept technical knowledge for
                 creating a value-based sustainable society.
                 </p>
@@ -98,10 +98,11 @@ function ContentArea() {
 
             <div className="mission-card">
                 <h2>Our Mission</h2>
-                <p>
-                    To develop an ecosystem 
-                </p>
+                <p>To develop an ecosystem of academic excellence through the best possible teaching-learning methodology.</p>
+                <p>To develop practically trained skilled professionals to meet the demands of society and the corporate World.</p>
+                <p>To groom professionals with high ethical values and the ability to solve real-life problems.</p>
             </div>
+
             </div>
         </div>
     )
