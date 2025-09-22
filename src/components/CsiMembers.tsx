@@ -13,6 +13,10 @@ import Rohit from '../assets/team-members-images/Rohit.jpg';
 import Bhakti from '../assets/team-members-images/Bhakti.jpg';
 import Gayatri from '../assets/team-members-images/Gayatri.jpg'
 import Omkar from '../assets/team-members-images/Omkar.jpg';
+import AdityaN from '../assets/team-members-images/Aditya N.jpg'
+import Default from '../assets/team-members-images/Default.jpg'
+
+import Aditi from '../assets/team-members-images/Aditi.jpg'
 
 export default function CsiMembers({ onToggleTeam }) {
   return (
@@ -60,7 +64,7 @@ export default function CsiMembers({ onToggleTeam }) {
             />
           </span>
           <TiltedCard
-            imageSrc={Devesh}
+            imageSrc={AdityaN}
             altText="Chairman"
             captionText="Chairman"
             containerHeight="200px"
@@ -152,7 +156,7 @@ export default function CsiMembers({ onToggleTeam }) {
             />
           </span>
           <TiltedCard
-            imageSrc={Devesh}
+            imageSrc={Default}
             altText="Bhoomi Naik"
             captionText="Event Head"
             containerHeight="180px"
@@ -211,7 +215,7 @@ export default function CsiMembers({ onToggleTeam }) {
             />
           </span>
           <TiltedCard
-            imageSrc={Devesh}
+            imageSrc={Default}
             altText="Juned Khan"
             captionText="Publicity Head"
             containerHeight="180px"
@@ -235,7 +239,7 @@ export default function CsiMembers({ onToggleTeam }) {
         <div className='tech-members-section'>
           <div className='tech-members-cards'>
               <TiltedCard
-                imageSrc={Devesh}
+                imageSrc={Default}
                 altText="Publicity Team Member"
                 captionText="Publicity Team"
                 containerHeight="160px"
@@ -249,12 +253,12 @@ export default function CsiMembers({ onToggleTeam }) {
                 displayOverlayContent={true}
                 overlayContent={
                   <p className="tilted-card-demo-text">
-                    Publicity Member
+                    Pankaj Gujuri
                   </p>
                 }
               />
               <TiltedCard
-                imageSrc={Devesh}
+                imageSrc={Default}
                 altText="Publicity Team Member"
                 captionText="Publicity Team"
                 containerHeight="160px"
@@ -268,12 +272,12 @@ export default function CsiMembers({ onToggleTeam }) {
                 displayOverlayContent={true}
                 overlayContent={
                   <p className="tilted-card-demo-text">
-                    Publicity Member
+                    Hiya Modi
                   </p>
                 }
               />
               <TiltedCard
-                imageSrc={Devesh}
+                imageSrc={Default}
                 altText="Publicity Team Member"
                 captionText="Publicity Team"
                 containerHeight="160px"
@@ -287,45 +291,7 @@ export default function CsiMembers({ onToggleTeam }) {
                 displayOverlayContent={true}
                 overlayContent={
                   <p className="tilted-card-demo-text">
-                    Publicity Member
-                  </p>
-                }
-              />
-              <TiltedCard
-                imageSrc={Devesh}
-                altText="Publicity Team Member"
-                captionText="Publicity Team"
-                containerHeight="160px"
-                containerWidth="160px"
-                imageHeight="160px"
-                imageWidth="160px"
-                rotateAmplitude={6}
-                scaleOnHover={1.05}
-                showMobileWarning={false}
-                showTooltip={true}
-                displayOverlayContent={true}
-                overlayContent={
-                  <p className="tilted-card-demo-text">
-                    Publicity Member
-                  </p>
-                }
-              />
-              <TiltedCard
-                imageSrc={Devesh}
-                altText="Publicity Team Member"
-                captionText="Publicity Team"
-                containerHeight="160px"
-                containerWidth="160px"
-                imageHeight="160px"
-                imageWidth="160px"
-                rotateAmplitude={6}
-                scaleOnHover={1.05}
-                showMobileWarning={false}
-                showTooltip={true}
-                displayOverlayContent={true}
-                overlayContent={
-                  <p className="tilted-card-demo-text">
-                    Publicity Member
+                    Anushka Mishra
                   </p>
                 }
               />
@@ -361,7 +327,7 @@ export default function CsiMembers({ onToggleTeam }) {
                   }
                 />
                 <TiltedCard
-                  imageSrc={Devesh}
+                  imageSrc={Default}
                   altText="Maitreya Channe"
                   captionText="Magzine Head"
                   containerHeight="180px"
@@ -386,100 +352,119 @@ export default function CsiMembers({ onToggleTeam }) {
         <div className='tech-members-section'>
           <div className='tech-members-cards'>
               <TiltedCard
-                imageSrc={Devesh}
-                altText="Documentation Team Member"
-                captionText="Documentation Team"
-                containerHeight="160px"
-                containerWidth="160px"
-                imageHeight="160px"
-                imageWidth="160px"
-                rotateAmplitude={6}
-                scaleOnHover={1.05}
-                showMobileWarning={false}
-                showTooltip={true}
-                displayOverlayContent={true}
-                overlayContent={
-                  <p className="tilted-card-demo-text">
-                    Documentation Member
-                  </p>
-                }
-              />
-              <TiltedCard
-                imageSrc={Devesh}
-                altText="Documentation Team Member"
-                captionText="Documentation Team"
-                containerHeight="160px"
-                containerWidth="160px"
-                imageHeight="160px"
-                imageWidth="160px"
-                rotateAmplitude={6}
-                scaleOnHover={1.05}
-                showMobileWarning={false}
-                showTooltip={true}
-                displayOverlayContent={true}
-                overlayContent={
-                  <p className="tilted-card-demo-text">
-                    Documentation Member
-                  </p>
-                }
-              />
-              <TiltedCard
-                imageSrc={Devesh}
-                altText="Documentation Team Member"
-                captionText="Documentation Team"
-                containerHeight="160px"
-                containerWidth="160px"
-                imageHeight="160px"
-                imageWidth="160px"
-                rotateAmplitude={6}
-                scaleOnHover={1.05}
-                showMobileWarning={false}
-                showTooltip={true}
-                displayOverlayContent={true}
-                overlayContent={
-                  <p className="tilted-card-demo-text">
-                    Documentation Member
-                  </p>
-                }
-              />
-              <TiltedCard
-                imageSrc={Devesh}
-                altText="Documentation Team Member"
-                captionText="Documentation Team"
-                containerHeight="160px"
-                containerWidth="160px"
-                imageHeight="160px"
-                imageWidth="160px"
-                rotateAmplitude={6}
-                scaleOnHover={1.05}
-                showMobileWarning={false}
-                showTooltip={true}
-                displayOverlayContent={true}
-                overlayContent={
-                  <p className="tilted-card-demo-text">
-                    Documentation Member
-                  </p>
-                }
-              />
-              <TiltedCard
-                imageSrc={Devesh}
-                altText="Documentation Team Member"
-                captionText="Documentation Team"
-                containerHeight="160px"
-                containerWidth="160px"
-                imageHeight="160px"
-                imageWidth="160px"
-                rotateAmplitude={6}
-                scaleOnHover={1.05}
-                showMobileWarning={false}
-                showTooltip={true}
-                displayOverlayContent={true}
-                overlayContent={
-                  <p className="tilted-card-demo-text">
-                    Documentation Member
-                  </p>
-                }
-              />
+                    imageSrc={Aditi}
+                    altText="Documentation Team Member"
+                    captionText="Documentation Team"
+                    containerHeight="160px"
+                    containerWidth="160px"
+                    imageHeight="160px"
+                    imageWidth="160px"
+                    rotateAmplitude={6}
+                    scaleOnHover={1.05}
+                    showMobileWarning={false}
+                    showTooltip={true}
+                    displayOverlayContent={true}
+                    overlayContent={
+                      <p className="tilted-card-demo-text">
+                        Aditi Sahu
+                      </p>
+                    }
+                  />
+                  <TiltedCard
+                    imageSrc={neel}
+                    altText="Documentation Team Member"
+                    captionText="Documentation Team"
+                    containerHeight="160px"
+                    containerWidth="160px"
+                    imageHeight="160px"
+                    imageWidth="160px"
+                    rotateAmplitude={6}
+                    scaleOnHover={1.05}
+                    showMobileWarning={false}
+                    showTooltip={true}
+                    displayOverlayContent={true}
+                    overlayContent={
+                      <p className="tilted-card-demo-text">
+                        Neel Pandey 
+                      </p>
+                    }
+                  />
+                  <TiltedCard
+                    imageSrc={Default}
+                    altText="Documentation Team Member"
+                    captionText="Documentation Team"
+                    containerHeight="160px"
+                    containerWidth="160px"
+                    imageHeight="160px"
+                    imageWidth="160px"
+                    rotateAmplitude={6}
+                    scaleOnHover={1.05}
+                    showMobileWarning={false}
+                    showTooltip={true}
+                    displayOverlayContent={true}
+                    overlayContent={
+                      <p className="tilted-card-demo-text">
+                        Masood Kasu
+                      </p>
+                    }
+                  />
+                  <TiltedCard
+                    imageSrc={Default}
+                    altText="Documentation Team Member"
+                    captionText="Documentation Team"
+                    containerHeight="160px"
+                    containerWidth="160px"
+                    imageHeight="160px"
+                    imageWidth="160px"
+                    rotateAmplitude={6}
+                    scaleOnHover={1.05}
+                    showMobileWarning={false}
+                    showTooltip={true}
+                    displayOverlayContent={true}
+                    overlayContent={
+                      <p className="tilted-card-demo-text">
+                        Dhruv Dwivedi 
+                      </p>
+                    }
+                  />
+                  <TiltedCard
+                    imageSrc={Default}
+                    altText="Documentation Team Member"
+                    captionText="Documentation Team"
+                    containerHeight="160px"
+                    containerWidth="160px"
+                    imageHeight="160px"
+                    imageWidth="160px"
+                    rotateAmplitude={6}
+                    scaleOnHover={1.05}
+                    showMobileWarning={false}
+                    showTooltip={true}
+                    displayOverlayContent={true}
+                    overlayContent={
+                      <p className="tilted-card-demo-text">
+                        Darpan Shah
+                      </p>
+                    }
+                  />
+                  <TiltedCard
+                    imageSrc={Default}
+                    altText="Documentation Team Member"
+                    captionText="Documentation Team"
+                    containerHeight="160px"
+                    containerWidth="160px"
+                    imageHeight="160px"
+                    imageWidth="160px"
+                    rotateAmplitude={6}
+                    scaleOnHover={1.05}
+                    showMobileWarning={false}
+                    showTooltip={true}
+                    displayOverlayContent={true}
+                    overlayContent={
+                      <p className="tilted-card-demo-text">
+                        Sharyou Sanap
+                      </p>
+                    }
+                  />
           </div>
         </div>
       </div>

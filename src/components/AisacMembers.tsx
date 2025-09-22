@@ -18,9 +18,25 @@ import Vedant from '../assets/team-members-images/Vedant.jpg';
 import Drishti from '../assets/team-members-images/Drishti.jpg';
 import Kshama from '../assets/team-members-images/Kshama.jpg'
 import Ninad from '../assets/team-members-images/Ninad.jpg';
+import Sarthak from '../assets/team-members-images/Sarthak.jpg'
+import Maitreya from '../assets/team-members-images/Maitreya.jpg';
 
 import Ayush from '../assets/team-members-images/Ayush.jpg';
 import Darpan from '../assets/team-members-images/Darpan.jpg';
+import Aditya from '../assets/team-members-images/Aditya.jpg'
+import Aditi from '../assets/team-members-images/Aditi.jpg'
+import mashood from '../assets/team-members-images/mashood.jpg'
+import sharyou from '../assets/team-members-images/sharyou.jpg'
+import neel from '../assets/team-members-images/neel.jpg'
+import Anuj from '../assets/team-members-images/Anuj.jpg'
+import Aarya from '../assets/team-members-images/Aarya.jpg'
+import Aadi from '../assets/team-members-images/Aadi.jpg'
+import ayusha from '../assets/team-members-images/ayusha.jpg'
+import parth from '../assets/team-members-images/parth.jpg'
+import trisha from '../assets/team-members-images/trisha.jpg'
+import dhruv from '../assets/team-members-images/dhruv.jpg'
+
+import Default from '../assets/team-members-images/Default.jpg';
 
 export default function TeamMembers() {
   const [showCsiTeam, setShowCsiTeam] = useState(false);
@@ -130,7 +146,7 @@ export default function TeamMembers() {
                   }
                 />
                 <TiltedCard
-                  imageSrc={Devesh}
+                  imageSrc={Maitreya}
                   altText="Maitreya Channe"
                   captionText="Joint Secretary"
                   containerHeight="180px"
@@ -245,7 +261,7 @@ export default function TeamMembers() {
             <div className='tech-members-section'>
               <div className='tech-members-cards'>
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={Aditya}
                     altText="Technical Team Member"
                     captionText="Tech Team"
                     containerHeight="160px"
@@ -264,7 +280,7 @@ export default function TeamMembers() {
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={Anuj}
                     altText="Technical Team Member"
                     captionText="Tech Team"
                     containerHeight="160px"
@@ -302,7 +318,7 @@ export default function TeamMembers() {
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={neel}
                     altText="Technical Team Member"
                     captionText="Tech Team"
                     containerHeight="160px"
@@ -321,7 +337,7 @@ export default function TeamMembers() {
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={Default}
                     altText="Technical Team Member"
                     captionText="Tech Team"
                     containerHeight="160px"
@@ -351,7 +367,7 @@ export default function TeamMembers() {
                 />
               </span>
               <TiltedCard
-                imageSrc={Devesh}
+                imageSrc={Default}
                 altText="Urvi Turbhekar"
                 captionText="Creativity Head"
                 containerHeight="180px"
@@ -375,7 +391,7 @@ export default function TeamMembers() {
             <div className='tech-members-section'>
               <div className='tech-members-cards'>
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={Default}
                     altText="Creativity Team Member"
                     captionText="Creativity Team"
                     containerHeight="160px"
@@ -389,12 +405,12 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Creativity Member
+                        Anushka Mishra
                       </p>
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={sharyou}
                     altText="Creativity Team Member"
                     captionText="Creativity Team"
                     containerHeight="160px"
@@ -408,64 +424,7 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Creativity Member
-                      </p>
-                    }
-                  />
-                  <TiltedCard
-                    imageSrc={Devesh}
-                    altText="Creativity Team Member"
-                    captionText="Creativity Team"
-                    containerHeight="160px"
-                    containerWidth="160px"
-                    imageHeight="160px"
-                    imageWidth="160px"
-                    rotateAmplitude={6}
-                    scaleOnHover={1.05}
-                    showMobileWarning={false}
-                    showTooltip={true}
-                    displayOverlayContent={true}
-                    overlayContent={
-                      <p className="tilted-card-demo-text">
-                        Creativity Member
-                      </p>
-                    }
-                  />
-                  <TiltedCard
-                    imageSrc={Devesh}
-                    altText="Creativity Team Member"
-                    captionText="Creativity Team"
-                    containerHeight="160px"
-                    containerWidth="160px"
-                    imageHeight="160px"
-                    imageWidth="160px"
-                    rotateAmplitude={6}
-                    scaleOnHover={1.05}
-                    showMobileWarning={false}
-                    showTooltip={true}
-                    displayOverlayContent={true}
-                    overlayContent={
-                      <p className="tilted-card-demo-text">
-                        Creativity Member
-                      </p>
-                    }
-                  />
-                  <TiltedCard
-                    imageSrc={Devesh}
-                    altText="Creativity Team Member"
-                    captionText="Creativity Team"
-                    containerHeight="160px"
-                    containerWidth="160px"
-                    imageHeight="160px"
-                    imageWidth="160px"
-                    rotateAmplitude={6}
-                    scaleOnHover={1.05}
-                    showMobileWarning={false}
-                    showTooltip={true}
-                    displayOverlayContent={true}
-                    overlayContent={
-                      <p className="tilted-card-demo-text">
-                        Creativity Member
+                        Sharyou Sanap
                       </p>
                     }
                   />
@@ -481,7 +440,7 @@ export default function TeamMembers() {
                 />
               </span>
               <TiltedCard
-                imageSrc={Devesh}
+                imageSrc={Sarthak}
                 altText="Sarthak Gavas"
                 captionText="Infra & Security Head"
                 containerHeight="180px"
@@ -505,7 +464,7 @@ export default function TeamMembers() {
             <div className='tech-members-section'>
               <div className='tech-members-cards'>
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={Aarya}
                     altText="Infra & Security Team Member"
                     captionText="Infra & Security Team"
                     containerHeight="160px"
@@ -519,12 +478,12 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Infra & Security Member
+                        Aarya Yerankar
                       </p>
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={trisha}
                     altText="Infra & Security Team Member"
                     captionText="Infra & Security Team"
                     containerHeight="160px"
@@ -538,12 +497,12 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Infra & Security Member
+                        Trisha Shetty
                       </p>
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={parth}
                     altText="Infra & Security Team Member"
                     captionText="Infra & Security Team"
                     containerHeight="160px"
@@ -557,12 +516,12 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Infra & Security Member
+                        Parth Kariya
                       </p>
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={Default}
                     altText="Infra & Security Team Member"
                     captionText="Infra & Security Team"
                     containerHeight="160px"
@@ -576,12 +535,12 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Infra & Security Member
+                        Riddhish Patil
                       </p>
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={Default}
                     altText="Infra & Security Team Member"
                     captionText="Infra & Security Team"
                     containerHeight="160px"
@@ -595,7 +554,45 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Infra & Security Member
+                        Amey salaskar
+                      </p>
+                    }
+                  />
+                  <TiltedCard
+                    imageSrc={Ayush}
+                    altText="Infra & Security Team Member"
+                    captionText="Infra & Security Team"
+                    containerHeight="160px"
+                    containerWidth="160px"
+                    imageHeight="160px"
+                    imageWidth="160px"
+                    rotateAmplitude={6}
+                    scaleOnHover={1.05}
+                    showMobileWarning={false}
+                    showTooltip={true}
+                    displayOverlayContent={true}
+                    overlayContent={
+                      <p className="tilted-card-demo-text">
+                        Aayush Karbhal
+                      </p>
+                    }
+                  />
+                  <TiltedCard
+                    imageSrc={Default}
+                    altText="Infra & Security Team Member"
+                    captionText="Infra & Security Team"
+                    containerHeight="160px"
+                    containerWidth="160px"
+                    imageHeight="160px"
+                    imageWidth="160px"
+                    rotateAmplitude={6}
+                    scaleOnHover={1.05}
+                    showMobileWarning={false}
+                    showTooltip={true}
+                    displayOverlayContent={true}
+                    overlayContent={
+                      <p className="tilted-card-demo-text">
+                        Soham Mane
                       </p>
                     }
                   />
@@ -654,7 +651,7 @@ export default function TeamMembers() {
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={Aadi}
                     altText="Social Media Team Member"
                     captionText="Social Media Team"
                     containerHeight="160px"
@@ -673,7 +670,7 @@ export default function TeamMembers() {
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={trisha}
                     altText="Social Media Team Member"
                     captionText="Social Media Team"
                     containerHeight="160px"
@@ -692,7 +689,7 @@ export default function TeamMembers() {
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={Aarya}
                     altText="Social Media Team Member"
                     captionText="Social Media Team"
                     containerHeight="160px"
@@ -746,7 +743,7 @@ export default function TeamMembers() {
             <div className='tech-members-section'>
               <div className='tech-members-cards'>
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={Aditi}
                     altText="Documentation Team Member"
                     captionText="Documentation Team"
                     containerHeight="160px"
@@ -765,7 +762,7 @@ export default function TeamMembers() {
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={neel}
                     altText="Documentation Team Member"
                     captionText="Documentation Team"
                     containerHeight="160px"
@@ -784,7 +781,7 @@ export default function TeamMembers() {
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={mashood}
                     altText="Documentation Team Member"
                     captionText="Documentation Team"
                     containerHeight="160px"
@@ -798,12 +795,12 @@ export default function TeamMembers() {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Masood Kasu
+                        Mashood Kasu
                       </p>
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={dhruv}
                     altText="Documentation Team Member"
                     captionText="Documentation Team"
                     containerHeight="160px"
@@ -822,7 +819,7 @@ export default function TeamMembers() {
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={Darpan}
                     altText="Documentation Team Member"
                     captionText="Documentation Team"
                     containerHeight="160px"
@@ -841,7 +838,7 @@ export default function TeamMembers() {
                     }
                   />
                   <TiltedCard
-                    imageSrc={Devesh}
+                    imageSrc={sharyou}
                     altText="Documentation Team Member"
                     captionText="Documentation Team"
                     containerHeight="160px"
