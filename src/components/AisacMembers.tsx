@@ -20,12 +20,12 @@ import Kshama from '../assets/team-members-images/Kshama.jpg'
 import Ninad from '../assets/team-members-images/Ninad.jpg';
 import Sarthak from '../assets/team-members-images/Sarthak.jpg'
 import Maitreya from '../assets/team-members-images/Maitreya.jpg';
+import urvi from '../assets/team-members-images/urvi-t.jpg'
 
 import Ayush from '../assets/team-members-images/Ayush.jpg';
 import Darpan from '../assets/team-members-images/Darpan.jpg';
 import Aditya from '../assets/team-members-images/Aditya.jpg'
 import Aditi from '../assets/team-members-images/Aditi.jpg'
-import mashood from '../assets/team-members-images/mashood.jpg'
 import sharyou from '../assets/team-members-images/sharyou.jpg'
 import neel from '../assets/team-members-images/neel.jpg'
 import Anuj from '../assets/team-members-images/Anuj.jpg'
@@ -35,6 +35,8 @@ import ayusha from '../assets/team-members-images/ayusha.jpg'
 import parth from '../assets/team-members-images/parth.jpg'
 import trisha from '../assets/team-members-images/trisha.jpg'
 import dhruv from '../assets/team-members-images/dhruv.jpg'
+import mashood from '../assets/team-members-images/mashood.jpg'
+import pankaj from '../assets/team-members-images/pankaj.jpg'
 
 import Default from '../assets/team-members-images/Default.jpg';
 
@@ -337,7 +339,7 @@ export default function TeamMembers() {
                     }
                   />
                   <TiltedCard
-                    imageSrc={Default}
+                    imageSrc={pankaj}
                     altText="Technical Team Member"
                     captionText="Tech Team"
                     containerHeight="160px"
@@ -367,7 +369,7 @@ export default function TeamMembers() {
                 />
               </span>
               <TiltedCard
-                imageSrc={Default}
+                imageSrc={urvi}
                 altText="Urvi Turbhekar"
                 captionText="Creativity Head"
                 containerHeight="180px"
