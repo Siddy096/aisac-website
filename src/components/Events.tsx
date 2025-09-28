@@ -12,7 +12,11 @@ import ReelMaking from "../event-poster/Reel-Making-Poster.jpeg";
 export default function Events() {
   const [activeEvent, setActiveEvent] = useState<any>(null);
 
-  const events = [
+  // Upcoming events (empty for now)
+  const upcomingEvents: any[] = [];
+
+  // Past events
+  const pastEvents = [
     {
       title: "Code Relay",
       date: "15th Sept 2025",
@@ -47,18 +51,18 @@ export default function Events() {
       {/* 🔹 Background Animation */}
       <div className="beams-background">
         <Beams
-        beamWidth={2}
-        beamHeight={15}
-        beamNumber={12}
-        lightColor="#ffffff"
-        speed={2}
-        noiseIntensity={1.75}
-        scale={0.2}
-        rotation={30}
+          beamWidth={2}
+          beamHeight={15}
+          beamNumber={12}
+          lightColor="#ffffff"
+          speed={2}
+          noiseIntensity={1.75}
+          scale={0.2}
+          rotation={30}
         />
-    </div>
+      </div>
 
-      {/* 🔹 Title */}
+      {/* 🔹 Upcoming Events */}
       <div className="page-title">
         <SplitText
           text="Upcoming Events"
@@ -73,9 +77,52 @@ export default function Events() {
         />
       </div>
 
-      {/* 🔹 Cards */}
       <div className="event-cards">
-        {events.map((event, idx) => (
+        {upcomingEvents.length === 0 ? (
+          <div className="event-card">
+            <h3>Coming Soon...</h3>
+          </div>
+        ) : (
+          upcomingEvents.map((event, idx) => (
+            <div key={idx} className="event-card">
+              <h3>{event.title}</h3>
+              <p className="event-info">
+                <b>Event Date:</b> {event.date}
+              </p>
+              <p className="event-info">
+                <b>Team Size:</b> {event.team}
+              </p>
+              <p className="event-info">
+                <b>Registration Fee:</b> {event.fee}
+              </p>
+              <button
+                className="details-btn"
+                onClick={() => setActiveEvent(event)}
+              >
+                Details
+              </button>
+            </div>
+          ))
+        )}
+      </div>
+
+      {/* 🔹 Past Events */}
+      <div className="page-title">
+        <SplitText
+          text="Past Events"
+          delay={100}
+          duration={0.6}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 10 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+        />
+      </div>
+
+      <div className="event-cards">
+        {pastEvents.map((event, idx) => (
           <div key={idx} className="event-card">
             <h3>{event.title}</h3>
             <p className="event-info">

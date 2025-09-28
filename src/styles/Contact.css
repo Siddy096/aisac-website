@@ -30,12 +30,12 @@
 .contact-content h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  font-family: 'Michroma-Regular', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .contact-content p {
   font-size: 1.2rem;
-  font-family: 'GoogleSansCode-VariableFont_wght', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Ensure canvas takes full size */
@@ -143,7 +143,7 @@
   font-size: 1.0rem;
   margin: 0;  
   left: 0;
-  font-family: 'Michroma-Regular';
+  font-family: 'Roboto', sans-serif;
 }
 
 .contact-actions button {

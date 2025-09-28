@@ -14,9 +14,18 @@ import Bhakti from '../assets/team-members-images/Bhakti.jpg';
 import Gayatri from '../assets/team-members-images/Gayatri.jpg'
 import Omkar from '../assets/team-members-images/Omkar.jpg';
 import AdityaN from '../assets/team-members-images/Aditya N.jpg'
+import juned from '../assets/team-members-images/juned.jpg'
 import Default from '../assets/team-members-images/Default.jpg'
 
 import Aditi from '../assets/team-members-images/Aditi.jpg'
+import mashood from '../assets/team-members-images/mashood.jpg'
+import neel from '../assets/team-members-images/neel.jpg'
+import Darpan from '../assets/team-members-images/Darpan.jpg'
+import bhoomi from '../assets/team-members-images/bhoomi.jpg'
+import hiyaM from '../assets/team-members-images/hiyaM.jpg'
+import dhruv from '../assets/team-members-images/dhruv.jpg'
+import sharyou from '../assets/team-members-images/sharyou.jpg'
+import pankaj from '../assets/team-members-images/pankaj.jpg'
 
 export default function CsiMembers({ onToggleTeam }) {
   return (
@@ -156,7 +165,7 @@ export default function CsiMembers({ onToggleTeam }) {
             />
           </span>
           <TiltedCard
-            imageSrc={Default}
+            imageSrc={bhoomi}
             altText="Bhoomi Naik"
             captionText="Event Head"
             containerHeight="180px"
@@ -215,7 +224,7 @@ export default function CsiMembers({ onToggleTeam }) {
             />
           </span>
           <TiltedCard
-            imageSrc={Default}
+            imageSrc={juned}
             altText="Juned Khan"
             captionText="Publicity Head"
             containerHeight="180px"
@@ -239,7 +248,7 @@ export default function CsiMembers({ onToggleTeam }) {
         <div className='tech-members-section'>
           <div className='tech-members-cards'>
               <TiltedCard
-                imageSrc={Default}
+                imageSrc={pankaj}
                 altText="Publicity Team Member"
                 captionText="Publicity Team"
                 containerHeight="160px"
@@ -258,7 +267,7 @@ export default function CsiMembers({ onToggleTeam }) {
                 }
               />
               <TiltedCard
-                imageSrc={Default}
+                imageSrc={hiyaM}
                 altText="Publicity Team Member"
                 captionText="Publicity Team"
                 containerHeight="160px"
@@ -390,7 +399,7 @@ export default function CsiMembers({ onToggleTeam }) {
                     }
                   />
                   <TiltedCard
-                    imageSrc={Default}
+                    imageSrc={mashood}
                     altText="Documentation Team Member"
                     captionText="Documentation Team"
                     containerHeight="160px"
@@ -404,12 +413,12 @@ export default function CsiMembers({ onToggleTeam }) {
                     displayOverlayContent={true}
                     overlayContent={
                       <p className="tilted-card-demo-text">
-                        Masood Kasu
+                        Mashood Kasu
                       </p>
                     }
                   />
                   <TiltedCard
-                    imageSrc={Default}
+                    imageSrc={dhruv}
                     altText="Documentation Team Member"
                     captionText="Documentation Team"
                     containerHeight="160px"
@@ -428,7 +437,7 @@ export default function CsiMembers({ onToggleTeam }) {
                     }
                   />
                   <TiltedCard
-                    imageSrc={Default}
+                    imageSrc={Darpan}
                     altText="Documentation Team Member"
                     captionText="Documentation Team"
                     containerHeight="160px"
@@ -447,7 +456,7 @@ export default function CsiMembers({ onToggleTeam }) {
                     }
                   />
                   <TiltedCard
-                    imageSrc={Default}
+                    imageSrc={sharyou}
                     altText="Documentation Team Member"
                     captionText="Documentation Team"
                     containerHeight="160px"
